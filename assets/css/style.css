@@ -1,0 +1,35 @@
+* {
+    background-color: black;
+}
+
+#hangmanGame{
+    float: left;
+    background-color: black;
+    margin: 20px;
+    width: 45%;
+}
+
+#container {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+#instructions{
+    color: red;
+    text-align: center;
+}
+
+#heroesDiv{
+    float: left;
+    margin: 20px;
+    width: 45%;
+}
+
+#heroWin{
+        text-transform: capitalize;
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+}
+

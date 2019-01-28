@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <div id="headlinePicture">
+        <div id="bannerpicture"><img src="assets/images/marvel.jpg" alt="bannerpic"></div>
+    </div>
+
+    <div id="container">
+            <div id="instructions">
+            <h2>Defeat Thanos before he collects all Six Infinity Stones!</h2>
+            <h2>Press a letter to start guessing the Marvel hero's name!</h2>
+        </div>
+        <div id="hangmanGame">
+            <div>
+                <!-- wins -->
+                <h2 class="winDiv">Wins</h2>
+                <div id="wins"></div>
+            </div>
+            <!-- guessing section -->
+            <div id="currentHeroDiv">
+                <h2 class="section-title">Current Hero</h2>
+                <div id="currentHero"></div>
+            </div>
+            <div id="guessesleftDiv">
+                <h2 class="section-title">Number of Guesses Left</h2>
+                <div id="guessesLeft"></div>
+            </div>
+            <div id="guessed-letters-section">
+                <h2 class="section-title">Letters Already Guessed</h2>
+                <div id="guessed-letters"></div>
+            </div>
+        </div>
+        <div id="heroesDiv"><img src="assets/images/thanosinfinityguantletcomplete.jpeg" width="400px" height="400px"
+                alt="hangman"></div>
+
+    </div>
+
+    <div id="heroWin"> </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
