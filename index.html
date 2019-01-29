@@ -6,49 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <script src="main.js"></script>
 
 </head>
 
 <body>
-    <div id="headlinePicture">
-        <div id="bannerpicture"><img src="assets/images/marvel.jpg" alt="bannerpic"></div>
-    </div>
 
     <div id="container">
-            <div id="instructions">
-            <h2>Defeat Thanos before he collects all Six Infinity Stones!</h2>
-            <h2>Press a letter to start guessing the Marvel hero's name!</h2>
-        </div>
-        <div id="hangmanGame">
-            <div>
-                <!-- wins -->
-                <h2 class="winDiv">Wins</h2>
-                <div id="wins"></div>
-            </div>
-            <!-- guessing section -->
-            <div id="currentHeroDiv">
-                <h2 class="section-title">Current Hero</h2>
-                <div id="currentHero"></div>
-            </div>
-            <div id="guessesleftDiv">
-                <h2 class="section-title">Number of Guesses Left</h2>
-                <div id="guessesLeft"></div>
-            </div>
-            <div id="guessed-letters-section">
-                <h2 class="section-title">Letters Already Guessed</h2>
-                <div id="guessed-letters"></div>
+        <div class="row headerRow">
+            <div class="col-lg-12" id="headlinePicture">
+                <div id="bannerdiv"><img id="bannerpic" src="assets/images/marvelHeroes.jpg" alt="bannerpic"></div>
             </div>
         </div>
-        <div id="heroesDiv"><img src="assets/images/thanosinfinityguantletcomplete.jpeg" width="400px" height="400px"
-                alt="hangman"></div>
-
+        <div class="row headerRow">
+            <div class="col-lg-12">
+                <div id="instructions">
+                    <h2>Defeat Thanos before he collects all Six Infinity Stones!</h2>
+                    <h2>Press a letter to start guessing the Marvel hero's name!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row gameArea">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <div id="hangmanGame">
+                    <div>
+                        <!-- wins -->
+                        <h2 class="winDiv">Wins</h2>
+                        <div id="wins"></div>
+                    </div>
+                    <!-- guessing section -->
+                    <div id="currentHeroDiv">
+                        <h2 class="section-title">Current Hero</h2>
+                        <div id="currentHero"></div>
+                    </div>
+                    <div id="guessesleftDiv">
+                        <h2 class="section-title">Number of Guesses Left</h2>
+                        <div id="guessesLeft"></div>
+                    </div>
+                    <div id="guessed-letters-section">
+                        <h2 class="section-title">Letters Already Guessed</h2>
+                        <div id="guessed-letters"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div id="heroesDiv"><img src="assets/images/thanosallstones.jpg" class="img-fluid" alt="hangman"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row winOrLose">
+            <div class="col-lg-12">
+        <div id="heroWin"> </div>
+    </div>
+    </div>
     </div>
 
-    <div id="heroWin"> </div>
 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
 </body>
 

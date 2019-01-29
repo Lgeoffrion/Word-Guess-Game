@@ -70,6 +70,7 @@ heroChoices: {
     // Guessing Letters function
     guessingLetters: function(letter) {
     if (this.guessesLeft === 0) {
+      document.querySelector("#heroWin").innerHTML = "Thanos has defeated " + this.heroChoices[this.wordPlayed].displayName;
         this.restartGame();
       }
     else {
@@ -154,15 +155,16 @@ heroChoices: {
           win = false;
         }
       }
-  
+
       // Winning the Game
       if (win) {
         this.wins = this.wins + 1;
         document.querySelector("#wins").innerHTML = this.wins;
-        document.querySelector("#heroWin").innerHTML = "Our Hero! " + this.heroChoices[this.wordPlayed].displayName;
+        document.querySelector("#heroWin").innerHTML = "Our Hero " + this.heroChoices[this.wordPlayed].displayName + " has stopped Thanos!";
         return true;
       }
       return false;
+
     }
   };
   
@@ -172,4 +174,3 @@ heroChoices: {
     heroGuessGame.letterGuessed = String.fromCharCode(event.which).toLowerCase();
     heroGuessGame.guessingLetters(heroGuessGame.letterGuessed);
   };
-   

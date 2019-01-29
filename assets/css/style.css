@@ -1,18 +1,28 @@
+/* font-family: 'Bangers', cursive; */
+
+
 * {
     background-color: black;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
 }
 
-#hangmanGame{
+/* #hangmanGame{
     float: left;
     background-color: black;
     margin: 20px;
     width: 45%;
-}
+} */
 
 #container {
     background-color: black;
     color: white;
     height: 100%;
+}
+
+#bannerpic{
+    width: 100%;
+    height: 250px;
 }
 
 #instructions{
@@ -21,9 +31,8 @@
 }
 
 #heroesDiv{
-    float: left;
-    margin: 20px;
-    width: 45%;
+    width: 80%;
+    float: right;
 }
 
 #heroWin{
@@ -31,5 +40,24 @@
         font-size: 40px;
         width: 100%;
         text-align: center;
+}
+
+#wins {
+    color: red;
+    font-size: 40px;
+}
+#currentHero {
+    color: red;
+    font-size: 40px;
+}
+
+#guessesLeft {
+    color: red;
+    font-size: 40px;
+}
+
+#guessed-letters{
+    color: red;
+    font-size: 40px;
 }
 
